@@ -2,9 +2,9 @@
 
 
 /*
-|--------------------------------------------------------------------------
+|-------------------------------------------------------------------------- 
 | Theme Setup
-|--------------------------------------------------------------------------
+|-------------------------------------------------------------------------- 
 */
 
 
@@ -27,9 +27,9 @@ function fitlife_setup(){
 
 
     /*
-    |--------------------------------------------------------------------------
+    |------------------------------------------------------------------
     | WooCommerce Support
-    |--------------------------------------------------------------------------
+    |------------------------------------------------------------------
     */
 
 
@@ -59,7 +59,6 @@ function fitlife_setup(){
 
         )
     );
-
 
 
 
@@ -155,11 +154,9 @@ add_action(
 
 
 
-
-
 /*
 |--------------------------------------------------------------------------
-| WooCommerce Customizations
+| WooCommerce Setup
 |--------------------------------------------------------------------------
 */
 
@@ -167,12 +164,7 @@ add_action(
 function fitlife_woocommerce_setup(){
 
 
-    if(
-
-        class_exists('WooCommerce')
-
-    ){
-
+    if(class_exists('WooCommerce')){
 
 
         add_theme_support(
@@ -204,10 +196,9 @@ add_action(
 
 
 
-
 /*
 |--------------------------------------------------------------------------
-| Dynamic Brand Color From Plugin Settings
+| Dynamic Brand Color
 |--------------------------------------------------------------------------
 */
 
@@ -226,15 +217,11 @@ function fitlife_dynamic_brand_color(){
 
     $brand_color = !empty($options['brand_color'])
 
-
     ?
-
 
     $options['brand_color']
 
-
     :
-
 
     '#2563eb';
 
@@ -252,7 +239,6 @@ function fitlife_dynamic_brand_color(){
 --fitlife-brand-color:
 
 <?php echo esc_html($brand_color); ?>
-
 
 
 }
@@ -301,101 +287,6 @@ add_action(
 
 );
 
-
-
-
-
-
-
-
-
-
-
-/*
-|--------------------------------------------------------------------------
-| Security Improvements
-|--------------------------------------------------------------------------
-*/
-
-
-remove_action(
-
-    'wp_head',
-
-    'wp_generator'
-
-);
-
-
-
-remove_action(
-
-    'wp_head',
-
-    'wlwmanifest_link'
-
-);
-
-
-
-remove_action(
-
-    'wp_head',
-
-    'rsd_link'
-
-);
-
-
-
-
-
-
-function fitlife_security_headers(){
-
-
-
-    if(!is_admin()){
-
-
-
-        header(
-
-            "X-Content-Type-Options: nosniff"
-
-        );
-
-
-
-        header(
-
-            "X-Frame-Options: SAMEORIGIN"
-
-        );
-
-
-
-        header(
-
-            "X-XSS-Protection: 1; mode=block"
-
-        );
-
-
-    }
-
-
-}
-
-
-
-add_action(
-
-    'send_headers',
-
-    'fitlife_security_headers'
-
-);
 
 
 
@@ -463,12 +354,13 @@ add_filter(
 
 /*
 |--------------------------------------------------------------------------
-| WooCommerce Product Page Support
+| Remove WooCommerce Generator
 |--------------------------------------------------------------------------
 */
 
 
 function fitlife_remove_woocommerce_generator(){
+
 
 
     remove_action(
@@ -481,6 +373,7 @@ function fitlife_remove_woocommerce_generator(){
 
 
 }
+
 
 
 add_action(
@@ -499,9 +392,11 @@ add_action(
 
 
 
+
+
 /*
 |--------------------------------------------------------------------------
-| Custom Shop Wrapper
+| WooCommerce Shop Container
 |--------------------------------------------------------------------------
 */
 
