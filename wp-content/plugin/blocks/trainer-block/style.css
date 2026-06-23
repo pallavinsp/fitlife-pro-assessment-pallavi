@@ -1,0 +1,20 @@
+.fitlife-trainer-block{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:20px;
+
+}
+
+
+.trainer-card{
+
+padding:20px;
+
+border:1px solid #ddd;
+
+border-radius:10px;
+
+}

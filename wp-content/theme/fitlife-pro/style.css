@@ -1,0 +1,2204 @@
+/*
+Theme Name: FitLife Pro
+Author: Pallavi N S
+Version: 1.0
+*/
+
+
+*{
+box-sizing:border-box;
+}
+
+
+html,
+body{
+
+margin:0;
+padding:0;
+font-family:Arial,Helvetica,sans-serif;
+background:#f8fafc;
+color:#111827;
+
+}
+
+
+body{
+
+display:flex;
+flex-direction:column;
+
+}
+
+
+.site-wrapper{
+
+min-height:100vh;
+display:flex;
+flex-direction:column;
+
+}
+
+
+.site-content{
+
+flex:1;
+
+}
+
+
+.container{
+
+width:90%;
+max-width:1200px;
+margin:auto;
+
+}
+
+
+img{
+
+max-width:100%;
+display:block;
+
+}
+
+
+/* ================= HEADER ================= */
+
+
+.site-header{
+
+background:#0f172a;
+padding:18px 0;
+position:sticky;
+top:0;
+z-index:9999;
+
+}
+
+
+.header-inner{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+}
+
+
+.logo a{
+
+font-size:32px;
+font-weight:800;
+color:white;
+text-decoration:none;
+
+}
+
+
+.main-navigation ul{
+
+display:flex;
+gap:30px;
+list-style:none;
+margin:0;
+padding:0;
+
+}
+
+
+.main-navigation a{
+
+color:white;
+font-size:17px;
+text-decoration:none;
+
+}
+
+
+.main-navigation a:hover{
+
+color:#60a5fa;
+
+}
+
+
+
+.mobile-toggle{
+
+display:none;
+background:none;
+border:none;
+font-size:32px;
+color:white;
+
+}
+
+
+
+/* ================= HERO ================= */
+
+
+.fitness-hero{
+
+height:700px;
+
+
+background-size:cover;
+
+background-position:center;
+
+background-repeat:no-repeat;
+
+}
+
+
+
+.hero-overlay{
+
+height:100%;
+
+background:rgba(0,0,0,.55);
+
+}
+
+
+
+.hero-container{
+
+height:100%;
+
+display:flex;
+
+align-items:center;
+
+}
+
+
+
+.hero-content{
+
+max-width:650px;
+
+color:white;
+
+}
+
+
+
+.hero-content h1{
+
+font-size:65px;
+line-height:1.1;
+margin-bottom:20px;
+
+}
+
+
+.hero-content p{
+
+font-size:22px;
+line-height:1.6;
+
+}
+
+
+
+.hero-buttons{
+
+display:flex;
+gap:15px;
+
+}
+
+
+
+.primary-btn,
+.outline-btn{
+
+display:inline-block;
+
+padding:15px 35px;
+
+border-radius:40px;
+
+text-decoration:none;
+
+margin-top:20px;
+
+}
+
+
+.primary-btn{
+
+background:#2563eb;
+color:white;
+
+}
+
+
+.outline-btn{
+
+border:2px solid white;
+color:white;
+
+}
+
+
+
+/* ================= COMMON ================= */
+
+
+section{
+
+padding:80px 0;
+
+}
+
+
+h2{
+
+font-size:40px;
+
+text-align:center;
+
+margin-bottom:40px;
+
+}
+
+
+
+/* ================= STATS ================= */
+
+
+.stats-section{
+
+background:#0f172a;
+color:white;
+
+}
+
+
+.stats-grid{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+text-align:center;
+
+}
+
+
+.stats-grid h2{
+
+font-size:45px;
+margin:0;
+
+}
+
+
+
+
+
+/* ================= ABOUT ================= */
+
+
+.two-column{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:50px;
+
+align-items:center;
+
+}
+
+
+.about-home img{
+
+width:100%;
+
+height:450px;
+
+object-fit:cover;
+
+border-radius:30px;
+
+}
+
+
+
+/* ================= FRONT PAGE IMAGES ================= */
+
+
+
+.image-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+}
+
+
+
+.image-grid img{
+
+width:100%;
+
+height:380px;
+
+object-fit:cover;
+
+border-radius:25px;
+
+transition:.4s;
+
+}
+
+
+
+.image-grid img:hover{
+
+transform:scale(1.05);
+
+}
+
+
+
+/* ================= PROGRAM CARDS ================= */
+
+
+.program-showcase{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+}
+
+
+
+.program-box{
+
+background:white;
+
+border-radius:25px;
+
+overflow:hidden;
+
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+
+
+.program-box img{
+
+width:100%;
+
+height:260px;
+
+object-fit:cover;
+
+}
+
+
+
+.program-box h3,
+.program-box p{
+
+padding:0 25px;
+
+}
+
+
+
+
+/* ================= FEATURES ================= */
+
+
+.feature-cards{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+}
+
+
+
+.feature-cards div{
+
+background:white;
+
+padding:35px;
+
+border-radius:25px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+
+
+/* ================= TRAINER ================= */
+
+
+.trainer-grid,
+.fitlife-program-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+}
+
+
+
+.trainer-card,
+.program-card{
+
+background:white;
+
+padding:30px;
+
+border-radius:25px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+
+.trainer-thumb{
+
+width:100%;
+
+height:300px;
+
+object-fit:cover;
+
+border-radius:20px;
+
+}
+
+
+
+/* ================= SINGLE ================= */
+
+
+.trainer-wrapper{
+
+display:grid;
+
+grid-template-columns:1fr 450px;
+
+gap:50px;
+
+align-items:center;
+
+}
+
+
+
+.trainer-image img{
+
+width:100%;
+
+height:500px;
+
+object-fit:cover;
+
+border-radius:30px;
+
+}
+
+
+.trainer-meta{
+
+background:white;
+
+padding:30px;
+
+border-radius:25px;
+
+}
+
+
+
+/* ================= FOOTER ================= */
+
+
+.site-footer{
+
+background:#0f172a;
+
+color:white;
+
+padding-top:60px;
+
+margin-top:auto;
+
+}
+
+
+
+.footer-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:40px;
+
+}
+
+
+
+.site-footer a,
+.site-footer p{
+
+color:#cbd5e1;
+
+}
+
+
+
+.footer-bottom{
+
+background:#020617;
+
+padding:20px;
+
+text-align:center;
+
+margin-top:40px;
+
+}
+
+
+
+
+/* ================= MOBILE ================= */
+
+
+@media(max-width:768px){
+
+
+
+.container{
+
+width:92%;
+
+}
+
+
+.mobile-toggle{
+
+display:block;
+
+}
+
+
+
+.main-navigation{
+
+display:none;
+
+position:absolute;
+
+top:75px;
+
+left:0;
+
+width:100%;
+
+background:#0f172a;
+
+padding:25px;
+
+}
+
+
+
+.main-navigation.active{
+
+display:block;
+
+}
+
+
+
+.main-navigation ul{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+
+
+.fitness-hero{
+
+height:550px;
+
+}
+
+
+
+.hero-content h1{
+
+font-size:38px;
+
+}
+
+
+
+.hero-content p{
+
+font-size:18px;
+
+}
+
+
+
+.hero-buttons{
+
+flex-direction:column;
+
+}
+
+
+
+.stats-grid,
+.two-column,
+.image-grid,
+.program-showcase,
+.feature-cards,
+.trainer-grid,
+.fitlife-program-grid,
+.footer-grid,
+.trainer-wrapper{
+
+grid-template-columns:1fr;
+
+}
+
+
+
+.about-home img{
+
+height:350px;
+
+}
+
+
+
+.image-grid img{
+
+height:300px;
+
+}
+
+
+
+.trainer-image img{
+
+height:350px;
+
+}
+
+
+section{
+
+padding:50px 0;
+
+}
+
+
+}
+
+/* =========================
+CONTACT PAGE FIX
+========================= */
+
+
+.contact-page{
+
+padding:80px 0;
+
+}
+
+
+
+.contact-header{
+
+text-align:center;
+
+margin-bottom:50px;
+
+}
+
+
+
+.contact-header h1{
+
+font-size:48px;
+
+margin-bottom:15px;
+
+}
+
+
+
+.contact-header p{
+
+font-size:18px;
+
+color:#64748b;
+
+}
+
+
+
+
+
+.contact-wrapper{
+
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:50px;
+
+align-items:start;
+
+
+}
+
+
+
+
+
+.contact-box{
+
+
+background:white;
+
+padding:40px;
+
+border-radius:25px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+
+}
+
+
+
+
+.contact-box h2{
+
+
+text-align:left;
+
+font-size:30px;
+
+margin-bottom:30px;
+
+
+}
+
+
+
+
+
+.contact-box label{
+
+
+display:block;
+
+font-weight:600;
+
+margin-bottom:8px;
+
+
+}
+
+
+
+
+
+.contact-box input,
+.contact-box textarea{
+
+
+width:100%;
+
+padding:15px;
+
+border:1px solid #ddd;
+
+border-radius:12px;
+
+font-size:16px;
+
+
+}
+
+
+
+
+
+.contact-box button{
+
+
+margin-top:10px;
+
+}
+
+
+
+
+
+.contact-info{
+
+
+display:flex;
+
+flex-direction:column;
+
+gap:25px;
+
+
+}
+
+
+
+
+
+.contact-card{
+
+
+background:white;
+
+padding:30px;
+
+border-radius:25px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+
+}
+
+
+
+
+.contact-card h3{
+
+
+font-size:24px;
+
+margin-bottom:15px;
+
+
+}
+
+
+
+
+
+@media(max-width:768px){
+
+
+
+.contact-wrapper{
+
+
+grid-template-columns:1fr;
+
+
+}
+
+
+
+.contact-header h1{
+
+
+font-size:36px;
+
+
+}
+
+
+}
+
+/* =========================
+TRAINER FILTER
+========================= */
+
+
+.trainer-filter{
+
+
+display:flex;
+
+gap:20px;
+
+align-items:center;
+
+margin:40px 0;
+
+background:white;
+
+padding:25px;
+
+border-radius:20px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+
+}
+
+
+
+.trainer-filter input,
+.trainer-filter select{
+
+
+height:50px;
+
+padding:0 18px;
+
+border:1px solid #ddd;
+
+border-radius:12px;
+
+font-size:16px;
+
+background:white;
+
+
+}
+
+
+
+.trainer-filter input{
+
+
+flex:1;
+
+
+}
+
+
+
+.trainer-filter button{
+
+
+height:50px;
+
+padding:0 35px;
+
+background:#2563eb;
+
+color:white;
+
+border:none;
+
+border-radius:25px;
+
+font-size:16px;
+
+cursor:pointer;
+
+
+}
+
+
+
+.trainer-filter button:hover{
+
+
+background:#1d4ed8;
+
+
+}
+
+
+
+
+/* =========================
+TRAINER SINGLE IMAGE
+========================= */
+
+
+.trainer-image{
+
+
+width:100%;
+
+
+}
+
+
+
+.trainer-image img{
+
+
+width:100%;
+
+height:500px;
+
+object-fit:cover;
+
+border-radius:30px;
+
+
+}
+
+
+
+
+
+/* =========================
+TRAINER CARD IMAGE
+========================= */
+
+
+.trainer-card img{
+
+
+width:100%;
+
+height:300px;
+
+object-fit:cover;
+
+border-radius:20px;
+
+margin-bottom:20px;
+
+
+}
+
+
+
+
+
+@media(max-width:768px){
+
+
+
+.trainer-filter{
+
+
+flex-direction:column;
+
+align-items:stretch;
+
+
+}
+
+
+
+.trainer-filter input,
+.trainer-filter select,
+.trainer-filter button{
+
+
+width:100%;
+
+
+}
+
+
+
+.trainer-image img{
+
+
+height:350px;
+
+
+}
+
+
+
+}
+/* =========================
+TRAINER SEARCH BUTTON FIX
+========================= */
+
+
+.trainer-filter button{
+
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+visibility:visible;
+
+opacity:1;
+
+height:50px;
+
+min-width:140px;
+
+padding:0 35px;
+
+background:#2563eb !important;
+
+color:#ffffff !important;
+
+border:none;
+
+border-radius:30px;
+
+font-size:16px;
+
+font-weight:600;
+
+cursor:pointer;
+
+line-height:1;
+
+
+}
+
+
+
+.trainer-filter button:hover{
+
+
+background:#1d4ed8 !important;
+
+
+}
+
+
+
+/* fix form alignment */
+
+
+.trainer-filter{
+
+
+display:flex;
+
+align-items:center;
+
+gap:20px;
+
+
+}
+
+
+
+.trainer-filter select{
+
+
+min-width:220px;
+
+
+}
+
+
+
+@media(max-width:768px){
+
+
+.trainer-filter button{
+
+
+width:100%;
+
+
+}
+
+
+
+}
+/* =========================
+   WOOCOMMERCE
+========================= */
+
+
+
+
+
+
+.woocommerce .products{
+
+display:flex;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+}
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product{
+    width:50%;
+}
+
+
+
+.woocommerce ul.products li.product{
+
+background:white;
+
+padding:25px;
+
+border-radius:25px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+
+
+.woocommerce ul.products li.product img{
+
+height:280px;
+
+object-fit:cover;
+
+border-radius:20px;
+
+}
+
+
+
+.woocommerce ul.products li.product .button{
+
+background:#2563eb;
+
+color:white;
+
+border-radius:30px;
+
+padding:12px 25px;
+
+}
+
+
+
+.woocommerce ul.products li.product .button:hover{
+
+opacity:.85;
+
+}
+
+
+
+.woocommerce div.product{
+
+background:white;
+
+padding:40px;
+
+border-radius:25px;
+
+}
+
+
+
+.woocommerce div.product img{
+
+border-radius:25px;
+
+}
+
+
+
+.woocommerce-message,
+.woocommerce-info{
+
+border-top-color:#2563eb;
+
+}
+
+
+
+@media(max-width:768px){
+
+
+.woocommerce .products{
+
+grid-template-columns:1fr;
+
+}
+.woocommerce ul.products[class*=columns-] li.product, .woocommerce-page ul.products[class*=columns-] li.product {
+    width:100%;
+}
+
+
+
+}
+/* =========================
+   WOOCOMMERCE BUTTON FIX
+========================= */
+
+
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button,
+.woocommerce .button,
+.woocommerce div.product .button{
+
+
+    background:#2563eb !important;
+
+    color:#ffffff !important;
+
+    border-radius:40px !important;
+
+    padding:14px 35px !important;
+
+    border:none !important;
+
+    text-decoration:none !important;
+
+    display:inline-block !important;
+
+    opacity:1 !important;
+
+}
+
+
+
+.woocommerce a.button:hover,
+.woocommerce button.button:hover,
+.woocommerce input.button:hover{
+
+
+    background:#1d4ed8 !important;
+
+    color:white !important;
+
+}
+
+
+
+/* FitLife custom buttons */
+
+
+.primary-btn,
+.outline-btn{
+
+
+    visibility:visible !important;
+
+    opacity:1 !important;
+
+}
+
+
+
+.primary-btn{
+
+
+    background:#2563eb !important;
+
+    color:white !important;
+
+
+}
+
+
+
+.outline-btn{
+
+
+    border:2px solid white !important;
+
+    color:white !important;
+
+    background:transparent !important;
+
+
+}
+
+/* =====================================================
+   WOOCOMMERCE MY ACCOUNT DESIGN
+===================================================== */
+
+
+.woocommerce-account .site-content{
+
+padding:60px 0;
+
+}
+
+
+
+.woocommerce-account .woocommerce{
+
+background:white;
+
+padding:40px;
+
+border-radius:25px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+
+
+
+/* Account Navigation */
+
+
+.woocommerce-MyAccount-navigation{
+
+width:260px;
+
+float:left;
+
+margin-right:40px;
+
+}
+
+
+
+.woocommerce-MyAccount-navigation ul{
+
+list-style:none;
+
+padding:0;
+
+margin:0;
+
+}
+
+
+
+.woocommerce-MyAccount-navigation li{
+
+margin-bottom:12px;
+
+}
+
+
+
+.woocommerce-MyAccount-navigation a{
+
+
+display:block;
+
+background:#f1f5f9;
+
+padding:15px 20px;
+
+border-radius:12px;
+
+color:#111827;
+
+text-decoration:none;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+
+
+.woocommerce-MyAccount-navigation a:hover,
+.woocommerce-MyAccount-navigation .is-active a{
+
+
+background:#2563eb;
+
+color:white;
+
+}
+
+
+
+
+/* Account Content */
+
+
+.woocommerce-MyAccount-content{
+
+overflow:hidden;
+
+}
+
+
+
+.woocommerce-MyAccount-content h2,
+.woocommerce-MyAccount-content h3{
+
+
+font-size:28px;
+
+margin-bottom:25px;
+
+color:#0f172a;
+
+}
+
+
+
+
+/* Tables */
+
+
+.woocommerce table.shop_table{
+
+
+border-collapse:collapse;
+
+width:100%;
+
+border-radius:15px;
+
+overflow:hidden;
+
+}
+
+
+
+.woocommerce table.shop_table th{
+
+
+background:#0f172a;
+
+color:white;
+
+padding:15px;
+
+}
+
+
+
+.woocommerce table.shop_table td{
+
+
+padding:15px;
+
+border-bottom:1px solid #e5e7eb;
+
+}
+
+
+
+
+/* Order Received Page */
+
+
+.woocommerce-order{
+
+
+background:white;
+
+padding:40px;
+
+border-radius:25px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+
+
+.woocommerce-order h2{
+
+
+text-align:left;
+
+font-size:30px;
+
+}
+
+
+
+.woocommerce-order ul.order_details{
+
+
+display:flex;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+padding:0;
+
+}
+
+
+
+.woocommerce-order ul.order_details li{
+
+
+background:#f8fafc;
+
+padding:20px;
+
+border-radius:15px;
+
+list-style:none;
+
+}
+
+
+
+
+/* Addresses */
+
+
+.woocommerce-Address{
+
+
+background:#f8fafc;
+
+padding:25px;
+
+border-radius:20px;
+
+margin-bottom:20px;
+
+}
+
+
+
+
+/* Buttons */
+
+
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button{
+
+
+background:#2563eb;
+
+color:white;
+
+border-radius:30px;
+
+padding:14px 30px;
+
+border:none;
+
+}
+
+
+
+
+.woocommerce a.button:hover,
+.woocommerce button.button:hover{
+
+
+opacity:.85;
+
+}
+
+
+
+
+/* My Programs */
+
+
+.fitlife-my-programs{
+
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:25px;
+
+}
+
+
+
+.program-item{
+
+
+background:#f8fafc;
+
+padding:25px;
+
+border-radius:20px;
+
+border-left:5px solid #2563eb;
+
+}
+
+
+
+.program-item h3{
+
+margin:0;
+
+font-size:22px;
+
+}
+
+
+
+
+
+/* Mobile */
+
+
+@media(max-width:768px){
+
+
+
+.woocommerce-account .woocommerce{
+
+
+padding:20px;
+
+
+}
+
+
+
+.woocommerce-MyAccount-navigation{
+
+
+width:100%;
+
+float:none;
+
+margin-bottom:30px;
+
+}
+
+
+
+.fitlife-my-programs{
+
+
+grid-template-columns:1fr;
+
+}
+
+
+
+}
+
+/* =====================================================
+   WOOCOMMERCE MY ACCOUNT DESIGN UPDATED
+===================================================== */
+
+
+/* Main My Account Wrapper */
+
+.woocommerce-account .site-content{
+    padding:60px 0;
+}
+
+
+.woocommerce-account .woocommerce{
+
+    background:#ffffff;
+
+    padding:40px;
+
+    border-radius:25px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    display:flex;
+
+    gap:40px;
+
+    align-items:flex-start;
+
+}
+
+
+
+/* =========================
+ACCOUNT LEFT MENU
+========================= */
+
+
+.woocommerce-MyAccount-navigation{
+
+    width:260px;
+
+    flex-shrink:0;
+
+}
+
+
+
+.woocommerce-MyAccount-navigation ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+
+
+.woocommerce-MyAccount-navigation li{
+
+    margin-bottom:14px;
+
+}
+
+
+
+.woocommerce-MyAccount-navigation a{
+
+
+    display:block;
+
+    background:#f1f5f9;
+
+    padding:16px 20px;
+
+    border-radius:14px;
+
+    color:#111827;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+
+
+.woocommerce-MyAccount-navigation a:hover,
+.woocommerce-MyAccount-navigation .is-active a{
+
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+
+
+
+
+/* =========================
+RIGHT CONTENT
+========================= */
+
+
+.woocommerce-MyAccount-content{
+
+
+    flex:1;
+
+    min-width:0;
+
+}
+
+
+
+.woocommerce-MyAccount-content h2,
+.woocommerce-MyAccount-content h3{
+
+
+    font-size:30px;
+
+    color:#0f172a;
+
+    margin-bottom:25px;
+
+    text-align:left;
+
+}
+
+
+
+
+/* =========================
+FORMS
+========================= */
+
+
+.woocommerce form .form-row{
+
+
+    width:100%;
+
+}
+
+
+
+.woocommerce form input,
+.woocommerce form select,
+.woocommerce form textarea{
+
+
+    width:100%;
+
+    padding:14px;
+
+    border:1px solid #ddd;
+
+    border-radius:12px;
+
+    font-size:16px;
+
+}
+
+
+
+
+
+/* =========================
+TABLES
+========================= */
+
+
+.woocommerce table.shop_table{
+
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:white;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+}
+
+
+
+.woocommerce table.shop_table th{
+
+
+    background:#0f172a;
+
+    color:white;
+
+    padding:15px;
+
+}
+
+
+
+.woocommerce table.shop_table td{
+
+
+    padding:15px;
+
+    border-bottom:1px solid #e5e7eb;
+
+}
+
+
+
+
+
+/* =========================
+ORDER DETAILS
+========================= */
+
+
+.woocommerce-order{
+
+
+    background:#ffffff;
+
+    padding:35px;
+
+    border-radius:25px;
+
+}
+
+
+
+
+.woocommerce-order ul.order_details{
+
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    padding:0;
+
+}
+
+
+
+.woocommerce-order ul.order_details li{
+
+
+    background:#f8fafc;
+
+    padding:18px;
+
+    border-radius:15px;
+
+    list-style:none;
+
+}
+
+
+
+
+
+/* =========================
+ADDRESS BOX
+========================= */
+
+
+.woocommerce-Address{
+
+
+    background:#f8fafc;
+
+    padding:25px;
+
+    border-radius:20px;
+
+}
+
+
+
+
+
+/* =========================
+BUTTONS
+========================= */
+
+
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button{
+
+
+    background:#2563eb !important;
+
+    color:white !important;
+
+    border-radius:30px;
+
+    padding:14px 30px;
+
+    border:none;
+
+}
+
+
+
+
+
+.woocommerce a.button:hover,
+.woocommerce button.button:hover{
+
+
+    background:#1d4ed8 !important;
+
+}
+
+
+
+
+/* =========================
+MY PROGRAMS
+========================= */
+
+
+.fitlife-my-programs{
+
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+
+
+
+.program-item{
+
+
+    background:#f8fafc;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    border-left:5px solid #2563eb;
+
+}
+
+
+
+
+
+/* =========================
+MOBILE
+========================= */
+
+
+@media(max-width:768px){
+
+
+.woocommerce-account .woocommerce{
+
+
+    display:block;
+
+    padding:20px;
+
+}
+
+
+
+.woocommerce-MyAccount-navigation{
+
+
+    width:100%;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.fitlife-my-programs{
+
+
+    grid-template-columns:1fr;
+
+}
+
+
+}

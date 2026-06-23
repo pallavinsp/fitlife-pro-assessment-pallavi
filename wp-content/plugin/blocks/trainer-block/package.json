@@ -1,0 +1,13 @@
+{
+  "name": "trainer-block",
+  "version": "1.0.0",
+  "description": "FitLife Trainer Gutenberg Block",
+  "main": "index.js",
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^30.0.0"
+  }
+}

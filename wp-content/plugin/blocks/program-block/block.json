@@ -1,0 +1,49 @@
+{
+    "apiVersion":3,
+    "name":"fitlife/program-block",
+    "title":"FitLife Program Highlight",
+    "category":"widgets",
+    "icon":"heart",
+    "description":"Highlight fitness program",
+    "editorScript":"file:./index.js",
+    "render":"file:./render.php",
+    "attributes":{
+
+        "title":{
+            "type":"string",
+            "default":"Weight Loss Program"
+        },
+
+        "description":{
+            "type":"string",
+            "default":"12 week transformation program"
+        },
+
+        "image":{
+            "type":"string"
+        },
+
+        "buttonText":{
+            "type":"string",
+            "default":"Join Now"
+        },
+
+        "buttonUrl":{
+            "type":"string",
+            "default":"#"
+        },
+
+        "difficulty":{
+            "type":"string",
+            "default":"Easy"
+        }
+
+    },
+
+    "supports":{
+
+        "html":false
+
+    }
+
+}

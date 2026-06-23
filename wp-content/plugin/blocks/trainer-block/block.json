@@ -1,0 +1,24 @@
+{
+"apiVersion":3,
+
+"name":"fitlife/trainer-block",
+
+"title":"FitLife Trainer Spotlight",
+
+"category":"widgets",
+
+"icon":"groups",
+
+"editorScript":"file:./index.js",
+
+"render":"file:./render.php",
+
+"attributes":{
+
+"trainerId":{
+"type":"string"
+}
+
+}
+
+}
